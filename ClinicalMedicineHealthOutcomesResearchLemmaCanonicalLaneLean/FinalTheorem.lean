@@ -1,0 +1,17 @@
+import canonicalLaneMathlib.AdmissibleClass
+import ClinicalMedicineHealthOutcomesResearchLemmaCanonicalLaneLean.CompartmentModel
+import ClinicalMedicineHealthOutcomesResearchLemmaCanonicalLaneLean.PharmacokineticsModel
+import ClinicalMedicineHealthOutcomesResearchLemmaCanonicalLaneLean.DiagnosticInference
+import ClinicalMedicineHealthOutcomesResearchLemmaCanonicalLaneLean.SurvivalAnalysisModel
+
+namespace HautevilleHouse
+namespace ClinicalMedicineHealthOutcomesResearchLemmaCanonicalLaneLean
+
+def ConstrainedClinicalMedicineClosure (A : AdmissibleClass) : Prop :=
+  bridgeClosed A ∧ gateClosed A
+
+theorem constrained_clinical_medicine_endgame (A : AdmissibleClass) : ConstrainedClinicalMedicineClosure A := by
+  exact And.intro (bridge_from_admissible_class A) (gate_from_admissible_class A)
+
+end ClinicalMedicineHealthOutcomesResearchLemmaCanonicalLaneLean
+end HautevilleHouse
